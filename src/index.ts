@@ -84,6 +84,7 @@ export { EditSite } from "./types/EditSite";
 export { FeaturePost } from "./types/FeaturePost";
 export { FederatedInstances } from "./types/FederatedInstances";
 export { FollowCommunity } from "./types/FollowCommunity";
+export { FollowedCommunityPostView } from "./types/FollowedCommunityPostView";
 export { GetBannedPersons } from "./types/GetBannedPersons";
 export { GetCaptcha } from "./types/GetCaptcha";
 export { GetCaptchaResponse } from "./types/GetCaptchaResponse";
@@ -94,6 +95,7 @@ export { GetCommunity } from "./types/GetCommunity";
 export { GetCommunityResponse } from "./types/GetCommunityResponse";
 export { GetFederatedInstances } from "./types/GetFederatedInstances";
 export { GetFederatedInstancesResponse } from "./types/GetFederatedInstancesResponse";
+export { GetFollowedCommunityPostsResponse } from "./types/GetFollowedCommunityPostsResponse";
 export { GetModlog } from "./types/GetModlog";
 export { GetModlogResponse } from "./types/GetModlogResponse";
 export { GetPersonDetails } from "./types/GetPersonDetails";
@@ -118,6 +120,8 @@ export { GetUnreadCountResponse } from "./types/GetUnreadCountResponse";
 export { GetUnreadRegistrationApplicationCount } from "./types/GetUnreadRegistrationApplicationCount";
 export { GetUnreadRegistrationApplicationCountResponse } from "./types/GetUnreadRegistrationApplicationCountResponse";
 export { HideCommunity } from "./types/HideCommunity";
+export { ImageUpload } from "./types/ImageUpload";
+export { ImageUploadId } from "./types/ImageUploadId";
 export { Instance } from "./types/Instance";
 export { InstanceBlockView } from "./types/InstanceBlockView";
 export { InstanceId } from "./types/InstanceId";
@@ -252,4 +256,8 @@ export { UserJoin } from "./types/UserJoin";
 export { UserJoinResponse } from "./types/UserJoinResponse";
 export { VerifyEmail } from "./types/VerifyEmail";
 export { VerifyEmailResponse } from "./types/VerifyEmailResponse";
-export { UploadImage, UploadImageResponse, ImageFile } from "./types/others";
+export {
+UploadImage,
+UploadImageResponse,
+ImageFile
+} from "./types/others";

@@ -4,5 +4,6 @@ import type { CommunityId } from "./CommunityId";
 export interface FollowCommunity {
   community_id: CommunityId;
   follow: boolean;
+  notifications_enabled: boolean;
   auth: string;
 }

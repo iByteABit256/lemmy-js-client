@@ -4,4 +4,5 @@ export interface GetUnreadCountResponse {
   replies: number;
   mentions: number;
   private_messages: number;
+  followed_community_posts: number;
 }

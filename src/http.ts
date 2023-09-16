@@ -58,6 +58,7 @@ import { GetCommunity } from "./types/GetCommunity";
 import { GetCommunityResponse } from "./types/GetCommunityResponse";
 import { GetFederatedInstances } from "./types/GetFederatedInstances";
 import { GetFederatedInstancesResponse } from "./types/GetFederatedInstancesResponse";
+import { GetFollowedCommunityPostsResponse } from "./types/GetFollowedCommunityPostsResponse";
 import { GetModlog } from "./types/GetModlog";
 import { GetModlogResponse } from "./types/GetModlogResponse";
 import { GetPersonDetails } from "./types/GetPersonDetails";
@@ -930,6 +931,19 @@ export class LemmyHttp {
       "/user/replies",
       form,
     );
+  }
+
+  /**
+   * Get posts from your followed communities with enabled notifications
+   *
+   * `HTTP.GET /user/followed_posts`
+   */
+  getFollowedPosts(form: GetPosts) {
+      return this.#wrapper<GetPosts, GetFollowedCommunityPostsResponse>(
+        HttpType.Get,
+        "/user/followed_posts",
+        form,
+      ) 
   }
 
   /**

@@ -137,6 +137,7 @@ import { VerifyEmailResponse } from "./types/VerifyEmailResponse";
 import { UploadImage, UploadImageResponse, VERSION } from "./types/others";
 import { BlockInstance } from "./types/BlockInstance";
 import { BlockInstanceResponse } from "./types/BlockInstanceResponse";
+import { GetFollowedPosts } from "./types/GetFollowedPosts";
 
 enum HttpType {
   Get = "GET",
@@ -938,12 +939,12 @@ export class LemmyHttp {
    *
    * `HTTP.GET /user/followed_posts`
    */
-  getFollowedPosts(form: GetPosts) {
-      return this.#wrapper<GetPosts, GetFollowedCommunityPostsResponse>(
-        HttpType.Get,
-        "/user/followed_posts",
-        form,
-      ) 
+  getFollowedPosts(form: GetFollowedPosts) {
+    return this.#wrapper<GetFollowedPosts, GetFollowedCommunityPostsResponse>(
+      HttpType.Get,
+      "/user/followed_posts",
+      form,
+    );
   }
 
   /**

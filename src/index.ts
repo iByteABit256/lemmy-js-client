@@ -96,6 +96,7 @@ export { GetCommunityResponse } from "./types/GetCommunityResponse";
 export { GetFederatedInstances } from "./types/GetFederatedInstances";
 export { GetFederatedInstancesResponse } from "./types/GetFederatedInstancesResponse";
 export { GetFollowedCommunityPostsResponse } from "./types/GetFollowedCommunityPostsResponse";
+export { GetFollowedPosts } from "./types/GetFollowedPosts";
 export { GetModlog } from "./types/GetModlog";
 export { GetModlogResponse } from "./types/GetModlogResponse";
 export { GetPersonDetails } from "./types/GetPersonDetails";
@@ -256,8 +257,4 @@ export { UserJoin } from "./types/UserJoin";
 export { UserJoinResponse } from "./types/UserJoinResponse";
 export { VerifyEmail } from "./types/VerifyEmail";
 export { VerifyEmailResponse } from "./types/VerifyEmailResponse";
-export {
-UploadImage,
-UploadImageResponse,
-ImageFile
-} from "./types/others";
+export { UploadImage, UploadImageResponse, ImageFile } from "./types/others";
